@@ -75,7 +75,10 @@ var Game = {
                 lastCell.y = firstCell.y;
             } else if (direction == 'up') {
                 lastCell.x = firstCell.x;
-                lastCell.y = lastCell.y - 15;
+                lastCell.y = firstCell.y - 15;
+            } else if (direction == 'down') {
+                lastCell.x = firstCell.x;
+                lastCell.y = firstCell.y + 15;
             }
 
             snake.push(lastCell);
